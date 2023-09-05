@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Safety</string>
+    <string name="msg_guard">Open when you are potientially on dangerous journey</string>
+    <string name="guard">GUARD</string>
+    <string name="msg_sos">In case of emergency ,contact family members to contact me</string>
+    <string name="sos">SOS</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
