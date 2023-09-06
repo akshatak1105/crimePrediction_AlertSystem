@@ -14,19 +14,24 @@ class MainActivity : AppCompatActivity() {
 
         bottomBar.setOnItemSelectedListener {
 
-            if (it.itemId == R.id.nav_guard) {
-                infalteFragment()
-            } else if (it.itemId == R.id.nav_home) {
-                infalteHomeFragment()
-            } else if (it.itemId == R.id.nav_safety) {
-                inflateSafetyFragment()
-            } else if (it.itemId == R.id.nav_profile) {
-                inflateContactFragment()
+            when (it.itemId) {
+                R.id.nav_guard -> {
+                    infalteFragment()
+                }
+                R.id.nav_home -> {
+                    infalteHomeFragment()
+                }
+                R.id.nav_safety -> {
+                    inflateSafetyFragment()
+                }
+                R.id.nav_profile -> {
+                    inflateContactFragment()
+                }
             }
 
             true
         }
-
+        bottomBar.selectedItemId = R.id.nav_home
     }
 
     private fun inflateContactFragment() {
